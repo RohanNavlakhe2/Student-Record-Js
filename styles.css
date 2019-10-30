@@ -1,0 +1,16 @@
+form{
+    margin: 30px auto;
+    border-radius: 15px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+table thead tr th{
+    font-size: 22px;
+}
+table tbody tr td{
+    font-size: 20px;
+}
+.bg-tbody {
+    background-color: #4fc3f7 !important; }
