@@ -1,10 +1,29 @@
+section{
+    background: url("img/pencil.jpg");
+    background-size: cover;
+    padding-bottom: 10px;
+}
 form{
-    margin: 30px auto;
+    position: relative;
+    margin: auto auto 50px;
+    top: 30px;
     border-radius: 15px;
+    border: 1px solid white;
+}
+form .form-group .form-control{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+form .form-group .form-control option{
+    color: black;
 }
 label{
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 table thead tr th{
     font-size: 22px;
@@ -12,5 +31,6 @@ table thead tr th{
 table tbody tr td{
     font-size: 20px;
 }
+
 .bg-tbody {
-    background-color: #4fc3f7 !important; }
+    background-color: #4fc3f7  ; }

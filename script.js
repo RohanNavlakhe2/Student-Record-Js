@@ -56,22 +56,12 @@ let deleteRecord=element=>{
   studentsData.splice(Number.parseInt(element.id),1);
   displayStudent();
 };
-let sortedStudentData=()=>{
-  /*let sortedDates=[];
-  let sortedStudents=[];
-  studentsData.forEach((student)=>{
-      sortedDates.push(student[3]);
-  });
-  sortedDates.sort();
-  sortedDates.reverse();*/
-  console.log(studentsData);
-  let sortedStudentData=studentsData.sort((student1,student2)=>{
+/*let sortedStudentData=()=>{
+    let sortedStudentData=studentsData.sort((student1,student2)=>{
      return student2[3]-student1[3];
   });
-  console.log(sortedStudentData);
-  console.log(sortedStudentData.reverse());
   return sortedStudentData.reverse();
-};
+};*/
 
 feeSelectBox.addEventListener('change',()=>{
    feeDisplayBox.value=fee[Number.parseInt(feeSelectBox.value)];
@@ -85,7 +75,11 @@ register.addEventListener('click',()=>{
 
 date.addEventListener('click',()=>{
     let d=new Date();
-    let todayDate=d.getFullYear()+'-'+'0'+(d.getMonth()+1)+'-'+d.getDate();
+    let todayDate;
+    if(d.getMonth()<=8)
+       todayDate=d.getFullYear()+'-'+'0'+(d.getMonth()+1)+'-'+d.getDate();
+    else
+        todayDate=d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
     date.setAttribute('max', todayDate);
 });
 
