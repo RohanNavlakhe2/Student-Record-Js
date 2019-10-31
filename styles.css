@@ -6,15 +6,14 @@ section{
 form{
     position: relative;
     margin: auto auto 50px;
+    border: 1px solid white;
     top: 30px;
     border-radius: 15px;
-    border: 1px solid white;
 }
 form .form-group .form-control{
     background-color: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border:none;
+    border-bottom: 1px solid white;
     color: white;
 }
 form .form-group .form-control option{
